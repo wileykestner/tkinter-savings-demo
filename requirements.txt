@@ -1,0 +1,5 @@
+--no-index
+--find-links vendor/
+
+savings==0.0.1
+
