@@ -78,18 +78,6 @@ class TkSavings(SavingsObserver, PresentRequiredEarningsObserver):
     def did_present_required_earnings(self, required_earnings: float):
         self._need_to_earn_variable.set(str(required_earnings))
 
-    def get_desired_savings(self) -> float:
-        return float(self._desired_savings_variable.get())
-
-    def get_tax_rate(self) -> int:
-        return int(self._tax_rate_variable.get())
-
-    def set_tax_rate(self, tax_rate: int) -> None:
-        self._tax_rate_variable.set(tax_rate)
-
-    def set_desired_savings(self, desired_savings: float) -> None:
-        self._desired_savings_variable.set(desired_savings)
-
     @staticmethod
     def get_padded_frame(tk_application: Tk,
                          west_padding: int,
