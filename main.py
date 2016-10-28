@@ -1,7 +1,7 @@
 from savings import Savings
-from tk_savings import TkSavings
+from tkinter_savings import TkinterSavings
 
 if __name__ == "__main__":
-    observer = TkSavings()
+    observer = TkinterSavings()
     savings_application = Savings(savings_observer=observer)
     savings_application.start()

@@ -4,7 +4,7 @@ from typing import Callable
 from savings import SavingsObserver, PresentRequiredEarningsObserver
 
 
-class TkSavings(SavingsObserver, PresentRequiredEarningsObserver):
+class TkinterSavings(SavingsObserver, PresentRequiredEarningsObserver):
     def __init__(self):
         super().__init__()
 
